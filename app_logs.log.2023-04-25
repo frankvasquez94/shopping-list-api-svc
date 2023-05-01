@@ -1,0 +1,24 @@
+2023-04-25 11:49:39,468 - INFO - app- add_endpoint - add - 24 - Add item endpoint, request: {"id": 0, "name": "test item 15"}
+2023-04-25 11:49:39,530 - INFO - app- add_endpoint - add - 28 - Add item endpoint, response: {"id": 18, "name": "test item 15"}
+2023-04-25 11:55:32,374 - INFO - app- add_endpoint - add - 24 - Add item endpoint, request: {"id": 0, "name": "test item 16"}
+2023-04-25 11:55:32,429 - INFO - app- add_endpoint - add - 28 - Add item endpoint, response: {"id": 19, "name": "test item 16"}
+2023-04-25 12:00:23,154 - INFO - app- add_endpoint - add - 25 - Add item endpoint, request: {"id": 0, "name": "test item 17"}
+2023-04-25 12:00:23,216 - INFO - app- add_endpoint - add - 29 - Add item endpoint, response: {"id": 20, "name": "test item 17"}
+2023-04-25 12:00:26,565 - INFO - app- add_endpoint - add - 25 - Add item endpoint, request: {"id": 0, "name": "test item 17"}
+2023-04-25 12:00:26,579 - ERROR - app- item_repository_impl - create - 33 - Item repository, error description:  (sqlite3.IntegrityError) UNIQUE constraint failed: items.name
+[SQL: INSERT INTO items (name) VALUES (?)]
+[parameters: ('test item 17',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-25 12:00:26,581 - ERROR - app- add_endpoint - add - 33 - Add item endpoint, error description:  code: 002, description: item already exist
+2023-04-25 15:31:37,479 - INFO - app- add_endpoint - add - 25 - Add item endpoint, request: {"id": 0, "name": "test item 17"}
+2023-04-25 15:31:37,524 - ERROR - app- item_repository_impl - create - 33 - Item repository, error description:  (sqlite3.IntegrityError) UNIQUE constraint failed: items.name
+[SQL: INSERT INTO items (name) VALUES (?)]
+[parameters: ('test item 17',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-25 15:31:37,526 - ERROR - app- add_endpoint - add - 33 - Add item endpoint, error description:  code: 002, description: item already exist
+2023-04-25 15:33:01,079 - INFO - app- delete - delete - 21 - Delete item endpoint, item_id: 5
+2023-04-25 15:33:01,121 - INFO - app- delete - delete - 23 - Delete item endpoint, item with id 5 deleted successfully
+2023-04-25 15:34:13,522 - INFO - app- delete - delete - 21 - Delete item endpoint, item_id: 5
+2023-04-25 15:34:13,528 - ERROR - app- item_repository_impl - delete - 47 - Item repository, error description:  Class 'builtins.NoneType' is not mapped
+2023-04-25 15:34:13,529 - ERROR - app- service - delete - 23 - Delete Item service, error description:  code: 003, description: an error has occurred with persistence component
+2023-04-25 15:34:13,530 - ERROR - app- delete - delete - 28 - Delete item endpoint, error description:  code: 003, description: an error has occurred with persistence component

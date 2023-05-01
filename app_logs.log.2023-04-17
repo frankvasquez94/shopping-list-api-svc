@@ -1,0 +1,50 @@
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+Add endpoint,
+Add endpoint, request: {"id": 0, "name": "test item 8"}
+Add endpoint, error description:  code: 002, description: item already exist
+Add endpoint,
+Add endpoint, request: {"id": 0, "name": "test item 9"}
+Add endpoint, response: {"id": 10, "name": "test item 9"}
+Add endpoint,
+Add endpoint, request: {"id": 0, "name": "test item 9"}
+Add endpoint, error description:  code: 002, description: item already exist
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+%(asctime)s - %(levelname)s - %(name)s- %(module)s - %(funcName)s - %(lineno)d - %(message)s
+2023-04-17 17:31:50,677 - INFO - app- add_endpoint - add - 24 - Add endpoint,
+2023-04-17 17:31:50,678 - INFO - app- add_endpoint - add - 25 - Add endpoint, request: {"id": 0, "name": "test item 9"}
+2023-04-17 17:31:50,689 - ERROR - app- add_endpoint - add - 32 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-17 17:32:17,173 - INFO - app- add_endpoint - add - 24 - Add endpoint,
+2023-04-17 17:32:17,173 - INFO - app- add_endpoint - add - 25 - Add endpoint, request: {"id": 0, "name": "test item 10"}
+2023-04-17 17:32:17,202 - INFO - app- add_endpoint - add - 29 - Add endpoint, response: {"id": 11, "name": "test item 10"}
+2023-04-17 17:34:39,095 - INFO - app- add_endpoint - add - 25 - Add endpoint,
+2023-04-17 17:34:39,096 - INFO - app- add_endpoint - add - 26 - Add endpoint, request: {"id": 0, "name": "test item 10"}
+2023-04-17 17:34:39,118 - ERROR - app- add_endpoint - add - 33 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-17 17:35:19,149 - INFO - app- add_endpoint - add - 25 - Add endpoint,
+2023-04-17 17:35:19,149 - INFO - app- add_endpoint - add - 26 - Add endpoint, request: {"id": 0, "name": "test item 11"}
+2023-04-17 17:35:19,180 - INFO - app- add_endpoint - add - 30 - Add endpoint, response: {"id": 12, "name": "test item 11"}
+2023-04-17 17:36:44,977 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 11"}
+2023-04-17 17:36:44,993 - ERROR - app- add_endpoint - add - 31 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-17 17:36:59,166 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 11"}
+2023-04-17 17:36:59,169 - ERROR - app- add_endpoint - add - 31 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-17 17:37:16,604 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 12"}
+2023-04-17 17:37:16,631 - INFO - app- add_endpoint - add - 28 - Add endpoint, response: {"id": 13, "name": "test item 12"}
+2023-04-17 17:53:40,695 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 12"}
+2023-04-17 17:53:40,714 - ERROR - app- item_repository_impl - create - 33 - Item repository, error description:  (sqlite3.IntegrityError) UNIQUE constraint failed: items.name
+[SQL: INSERT INTO items (name) VALUES (?)]
+[parameters: ('test item 12',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-17 17:53:40,714 - ERROR - app- add_endpoint - add - 31 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-17 17:55:40,333 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 13"}
+2023-04-17 17:55:40,358 - INFO - app- add_endpoint - add - 28 - Add endpoint, response: {"id": 14, "name": "test item 13"}
+2023-04-17 17:56:05,863 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 13"}
+2023-04-17 17:56:05,867 - ERROR - app- item_repository_impl - create - 33 - Item repository, error description:  (sqlite3.IntegrityError) UNIQUE constraint failed: items.name
+[SQL: INSERT INTO items (name) VALUES (?)]
+[parameters: ('test item 13',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-17 17:56:05,868 - ERROR - app- add_endpoint - add - 31 - Add endpoint, error description:  code: 002, description: item already exist

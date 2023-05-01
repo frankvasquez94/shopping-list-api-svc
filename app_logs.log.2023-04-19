@@ -1,0 +1,2 @@
+2023-04-19 21:38:03,995 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "Este es un nuevo item"}
+2023-04-19 21:38:04,062 - INFO - app- add_endpoint - add - 28 - Add endpoint, response: {"id": 16, "name": "Este es un nuevo item"}

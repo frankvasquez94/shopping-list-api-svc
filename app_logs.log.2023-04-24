@@ -1,0 +1,5 @@
+2023-04-24 14:23:33,914 - INFO - app- get_endpoint - get - 23 - Get item endpoint, request: item_id- > 100
+2023-04-24 14:23:33,935 - INFO - app- item_repository_impl - find - 72 - Item repository, item not found, id: 100
+2023-04-24 14:23:33,935 - INFO - app- service - retrieve - 25 - Retrieve Item service,  item not found, id: 100
+2023-04-24 14:23:33,936 - ERROR - app- service - retrieve - 28 - Retrieve Item service, error description:   code: 004, description: resource not found
+2023-04-24 14:23:33,936 - ERROR - app- get_endpoint - get - 29 - Get item endpoint, error description:  code: 004, description: resource not found

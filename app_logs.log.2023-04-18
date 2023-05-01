@@ -1,0 +1,8 @@
+2023-04-18 10:58:27,072 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 13"}
+2023-04-18 10:58:27,090 - ERROR - app- item_repository_impl - create - 33 - Item repository, error description:  (sqlite3.IntegrityError) UNIQUE constraint failed: items.name
+[SQL: INSERT INTO items (name) VALUES (?)]
+[parameters: ('test item 13',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-18 10:58:27,090 - ERROR - app- add_endpoint - add - 31 - Add endpoint, error description:  code: 002, description: item already exist
+2023-04-18 10:58:47,698 - INFO - app- add_endpoint - add - 24 - Add endpoint, request: {"id": 0, "name": "test item 14"}
+2023-04-18 10:58:47,732 - INFO - app- add_endpoint - add - 28 - Add endpoint, response: {"id": 15, "name": "test item 14"}

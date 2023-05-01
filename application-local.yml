@@ -1,0 +1,6 @@
+cors:
+  allow_origins: ["http://localhost.tiangolo.com", "https://localhost.tiangolo.com", "http://localhost", "http://localhost:8080", "http://localhost:8000"]
+  allow_methods: ["GET", "POST", "PUT", "DELETE"]
+  #allow_headers: ["itemID","ID"]
+  allow_headers: ["*"]
+  allow_credentials: True
