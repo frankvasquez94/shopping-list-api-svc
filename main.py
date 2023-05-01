@@ -22,6 +22,12 @@ from shopping_list.infrastructure.rest.item.delete import DeleteEndpoint as Dele
 from shopping_list.item.operations.retrieve_all.service import Service as RetrieveAllItemsService
 from shopping_list.infrastructure.rest.item.get_all_endpoint import GetAllEndpoint as GetAllItemsEndpoint
 
+from shopping_list.infrastructure.storage.relational_database.shopping_list_repository_impl import ShoppingListRepositoryImpl
+from shopping_list.shopping_list.operations.add.service import Service as AddShoppingListService
+from shopping_list.infrastructure.rest.shopping_list.add_endpoint import AddEndpoint as AddShoppingListEndpoint
+from shopping_list.infrastructure.rest.shopping_list.shopping_list import ShoppingList
+
+
 # Inicializamos el logger
 log.init()
 
@@ -113,6 +119,17 @@ get_all_items_endpoint = GetAllItemsEndpoint(get_all_service=get_all_items_servi
 def get_all_items(response: Response, version: Annotated[str | None, Header()] = 1.0):
     return get_all_items_endpoint.get_all(response, version)
 
+
+# SHOPPING LIST
+
+shopping_list_repository = ShoppingListRepositoryImpl()
+add_shopping_list_service = AddShoppingListService(shopping_list_repository=shopping_list_repository)
+add_shopping_list_endpoint = AddShoppingListEndpoint(add_shopping_list_service=add_shopping_list_service)
+
+
+@app.post("/shopping-lists")
+def add_shopping_list(shopping_list: Annotated[ShoppingList, Body(example={"name": "Celebration shopping list"})], response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingList:
+    return add_shopping_list_endpoint.add(shopping_list_request=shopping_list, response=response, version=version)
 
 # Test del dominio
 

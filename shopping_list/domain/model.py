@@ -10,8 +10,8 @@ class ShoppingList(BaseModel):
     # No se permiten items repetidos
     item_details: List["Detail"] = []
 
-    class Config:
-        validate_assignment = True
+    #class Config:
+        #validate_assignment = True
 
     def get_total(self) -> float:
         total = 0.00
@@ -97,6 +97,3 @@ class Detail(BaseModel):
     #         raise ValueError("quantity must be greater or equals than 0")
     #     self._price = val
 
-
-class Custom:
-    pass

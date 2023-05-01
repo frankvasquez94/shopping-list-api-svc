@@ -1,88 +1,9 @@
-2023-04-30 21:43:05,069 - INFO - app- get_endpoint - get - 23 - Get item endpoint, request: item_id- > 100
-2023-04-30 21:43:05,108 - INFO - app- item_repository_impl - find - 72 - Item repository, item not found, id: 100
-2023-04-30 21:43:05,112 - INFO - app- service - retrieve - 25 - Retrieve Item service,  item not found, id: 100
-2023-04-30 21:43:05,113 - ERROR - app- service - retrieve - 28 - Retrieve Item service, error description:   code: 004, description: resource not found
-2023-04-30 21:43:05,113 - ERROR - app- get_endpoint - get - 29 - Get item endpoint, error description:  code: 004, description: resource not found
-2023-04-30 21:43:13,321 - INFO - app- get_endpoint - get - 23 - Get item endpoint, request: item_id- > 5
-2023-04-30 21:43:13,325 - INFO - app- item_repository_impl - find - 72 - Item repository, item not found, id: 5
-2023-04-30 21:43:13,326 - INFO - app- service - retrieve - 25 - Retrieve Item service,  item not found, id: 5
-2023-04-30 21:43:13,326 - ERROR - app- service - retrieve - 28 - Retrieve Item service, error description:   code: 004, description: resource not found
-2023-04-30 21:43:13,328 - ERROR - app- get_endpoint - get - 29 - Get item endpoint, error description:  code: 004, description: resource not found
-2023-04-30 21:43:19,336 - INFO - app- get_endpoint - get - 23 - Get item endpoint, request: item_id- > 10
-2023-04-30 21:43:19,344 - INFO - app- get_endpoint - get - 26 - Get item endpoint, response: {"id": 10, "name": "test item 9"}
-2023-04-30 21:43:48,856 - INFO - app- get_all_endpoint - get_all - 29 - Get all items endpoint
-2023-04-30 21:43:48,875 - ERROR - app- get_all_endpoint - get_all - 39 - Get all items endpoint, error description:  local variable 'item_dto' referenced before assignment
-2023-04-30 21:47:33,206 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 21:47:33,227 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  local variable 'item_dto' referenced before assignment
-2023-04-30 21:54:39,743 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 21:54:39,758 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  local variable 'item_dto' referenced before assignment
-2023-04-30 21:57:15,847 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 21:57:15,874 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  local variable 'item_dto' referenced before assignment
-2023-04-30 21:58:50,705 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 21:58:50,729 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  local variable 'item_dto' referenced before assignment
-2023-04-30 22:01:25,299 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 22:01:25,317 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  ItemDTO() takes no arguments
-2023-04-30 22:01:47,103 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 22:01:47,106 - ERROR - app- get_all_endpoint - get_all - 37 - Get all items endpoint, error description:  ItemDTO() takes no arguments
-2023-04-30 22:03:11,104 - INFO - app- get_all_endpoint - get_all - 27 - Get all items endpoint
-2023-04-30 22:03:11,123 - INFO - app- get_all_endpoint - get_all - 30 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
-2023-04-30 22:42:33,014 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 1.0
-2023-04-30 22:42:33,015 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
-2023-04-30 22:42:33,016 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
-2023-04-30 22:42:33,041 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
-2023-04-30 22:43:05,516 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 2.0
-2023-04-30 22:43:05,517 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
-2023-04-30 22:43:05,517 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
-2023-04-30 22:43:05,520 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
-2023-04-30 23:09:31,090 - INFO - app- add_endpoint - add - 24 - Add item endpoint, version: 1.0
-2023-04-30 23:09:31,090 - INFO - app- add_endpoint - add - 26 - Add item endpoint, request: {"id": 0, "name": "test item 18"}
-2023-04-30 23:09:31,091 - INFO - app- item_repository_impl - create - 26 - Item repository, creating item with name: test item 18
-2023-04-30 23:09:31,164 - INFO - app- item_repository_impl - create - 33 - Item repository, item: test item 18 created successfully
-2023-04-30 23:09:31,167 - INFO - app- add_endpoint - add - 30 - Add item endpoint, response: {"id": 21, "name": "test item 18"}
-2023-04-30 23:10:24,815 - INFO - app- get_endpoint - get - 23 - Get item endpoint, version: 1.0
-2023-04-30 23:10:24,816 - INFO - app- get_endpoint - get - 25 - Get item endpoint, request: item_id- > 21
-2023-04-30 23:10:24,817 - INFO - app- item_repository_impl - find - 74 - Item repository, finding item with id: 21
-2023-04-30 23:10:24,822 - INFO - app- item_repository_impl - find - 80 - Item repository, item found successfully: id=21 name='test item 18' 
-2023-04-30 23:10:24,823 - INFO - app- get_endpoint - get - 28 - Get item endpoint, response: {"id": 21, "name": "test item 18"}
-2023-04-30 23:11:25,801 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:11:25,801 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:11:25,803 - ERROR - app- service - update - 27 - Update Item service, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:11:25,803 - ERROR - app- update_endpoint - update - 39 - Update item endpoint, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:13:30,833 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:13:30,833 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:13:30,834 - ERROR - app- service - update - 27 - Update Item service, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:13:30,834 - ERROR - app- update_endpoint - update - 39 - Update item endpoint, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:14:20,826 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:14:20,827 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:14:20,827 - ERROR - app- service - update - 27 - Update Item service, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:14:20,828 - ERROR - app- update_endpoint - update - 39 - Update item endpoint, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:14:29,598 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:14:29,599 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:14:29,603 - ERROR - app- service - update - 27 - Update Item service, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:14:29,604 - ERROR - app- update_endpoint - update - 39 - Update item endpoint, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:15:54,013 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:15:54,013 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:15:54,014 - ERROR - app- service - update - 27 - Update Item service, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:15:54,014 - ERROR - app- update_endpoint - update - 39 - Update item endpoint, error description:  Object of type Item is not JSON serializable
-2023-04-30 23:18:39,388 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:18:39,389 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:18:39,389 - INFO - app- item_repository_impl - update - 56 - Item repository, updating item to {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:18:39,406 - INFO - app- item_repository_impl - update - 60 - Item repository, item to update id: 21, name: test item 18
-2023-04-30 23:18:39,423 - INFO - app- item_repository_impl - update - 64 - Item repository, item {"id": 21, "name": "test item 18 updated"} updated successfully
-2023-04-30 23:18:39,423 - INFO - app- update_endpoint - update - 30 - Update item endpoint, response: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:20:09,381 - INFO - app- update_endpoint - update - 24 - Update item endpoint, version: 1.0
-2023-04-30 23:20:09,381 - INFO - app- update_endpoint - update - 26 - Update item endpoint, request: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:20:09,382 - INFO - app- item_repository_impl - update - 56 - Item repository, updating item to {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:20:09,385 - INFO - app- item_repository_impl - update - 60 - Item repository, item to update id: 21, name: test item 18 updated
-2023-04-30 23:20:09,392 - INFO - app- item_repository_impl - update - 64 - Item repository, item {"id": 21, "name": "test item 18 updated"} updated successfully
-2023-04-30 23:20:09,393 - INFO - app- update_endpoint - update - 30 - Update item endpoint, response: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:20:42,579 - INFO - app- get_endpoint - get - 23 - Get item endpoint, version: 1.0
-2023-04-30 23:20:42,581 - INFO - app- get_endpoint - get - 25 - Get item endpoint, request: item_id- > 21
-2023-04-30 23:20:42,582 - INFO - app- item_repository_impl - find - 74 - Item repository, finding item with id: 21
-2023-04-30 23:20:42,590 - INFO - app- item_repository_impl - find - 80 - Item repository, item found successfully: id=21 name='test item 18 updated' 
-2023-04-30 23:20:42,590 - INFO - app- get_endpoint - get - 28 - Get item endpoint, response: {"id": 21, "name": "test item 18 updated"}
-2023-04-30 23:21:17,498 - INFO - app- delete - delete - 20 - Delete item endpoint, version: 1.0
-2023-04-30 23:21:17,499 - INFO - app- delete - delete - 22 - Delete item endpoint, item_id: 21
-2023-04-30 23:21:17,500 - INFO - app- item_repository_impl - delete - 43 - Item repository, deleting item with id: 21
-2023-04-30 23:21:17,525 - INFO - app- item_repository_impl - delete - 49 - Item repository, item with id: 21 deleted successfully
-2023-04-30 23:21:17,526 - INFO - app- delete - delete - 24 - Delete item endpoint, item with id 21 deleted successfully
+2023-05-01 17:12:42,240 - INFO - app- add_endpoint - add - 26 - Add shopping list endpoint,  version: 1.0
+2023-05-01 17:12:42,242 - INFO - app- add_endpoint - add - 28 - Add shopping list endpoint,  creating shopping list: {"id": 0, "name": "Shopping list test"}
+2023-05-01 17:12:42,243 - ERROR - app- service - add - 28 - Add shopping list service, error description:  'NoneType' object has no attribute 'name'
+2023-05-01 17:12:42,243 - ERROR - app- add_endpoint - add - 40 - Add shopping list endpoint, error description:  'NoneType' object has no attribute 'name'
+2023-05-01 17:14:57,225 - INFO - app- add_endpoint - add - 26 - Add shopping list endpoint,  version: 1.0
+2023-05-01 17:14:57,225 - INFO - app- add_endpoint - add - 28 - Add shopping list endpoint,  creating shopping list: {"id": 0, "name": "Shopping list test"}
+2023-05-01 17:14:57,226 - INFO - app- shopping_list_repository_impl - create - 26 - Shopping list repository, creating shopping list: Shopping list test
+2023-05-01 17:14:57,247 - INFO - app- shopping_list_repository_impl - create - 33 - Shopping list repository, shopping list: Shopping list test created successfully
+2023-05-01 17:14:57,248 - INFO - app- add_endpoint - add - 32 - Add shopping list endpoint,  shopping list created successfully: {"id": 1, "name": "Shopping list test"}
