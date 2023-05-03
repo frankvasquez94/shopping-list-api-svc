@@ -1,0 +1,9 @@
+2023-05-01 17:12:42,240 - INFO - app- add_endpoint - add - 26 - Add shopping list endpoint,  version: 1.0
+2023-05-01 17:12:42,242 - INFO - app- add_endpoint - add - 28 - Add shopping list endpoint,  creating shopping list: {"id": 0, "name": "Shopping list test"}
+2023-05-01 17:12:42,243 - ERROR - app- service - add - 28 - Add shopping list service, error description:  'NoneType' object has no attribute 'name'
+2023-05-01 17:12:42,243 - ERROR - app- add_endpoint - add - 40 - Add shopping list endpoint, error description:  'NoneType' object has no attribute 'name'
+2023-05-01 17:14:57,225 - INFO - app- add_endpoint - add - 26 - Add shopping list endpoint,  version: 1.0
+2023-05-01 17:14:57,225 - INFO - app- add_endpoint - add - 28 - Add shopping list endpoint,  creating shopping list: {"id": 0, "name": "Shopping list test"}
+2023-05-01 17:14:57,226 - INFO - app- shopping_list_repository_impl - create - 26 - Shopping list repository, creating shopping list: Shopping list test
+2023-05-01 17:14:57,247 - INFO - app- shopping_list_repository_impl - create - 33 - Shopping list repository, shopping list: Shopping list test created successfully
+2023-05-01 17:14:57,248 - INFO - app- add_endpoint - add - 32 - Add shopping list endpoint,  shopping list created successfully: {"id": 1, "name": "Shopping list test"}

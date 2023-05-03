@@ -27,6 +27,9 @@ from shopping_list.shopping_list.operations.add.service import Service as AddSho
 from shopping_list.infrastructure.rest.shopping_list.add_endpoint import AddEndpoint as AddShoppingListEndpoint
 from shopping_list.infrastructure.rest.shopping_list.shopping_list import ShoppingList
 
+from shopping_list.shopping_list.operations.delete.service import Service as DeleteShoppingListService
+from shopping_list.infrastructure.rest.shopping_list.delete_endpoint import DeleteEndpoint as DeleteShoppingListEndpoint
+
 
 # Inicializamos el logger
 log.init()
@@ -130,6 +133,17 @@ add_shopping_list_endpoint = AddShoppingListEndpoint(add_shopping_list_service=a
 @app.post("/shopping-lists")
 def add_shopping_list(shopping_list: Annotated[ShoppingList, Body(example={"name": "Celebration shopping list"})], response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingList:
     return add_shopping_list_endpoint.add(shopping_list_request=shopping_list, response=response, version=version)
+
+
+delete_shopping_list_service = DeleteShoppingListService(shopping_list_repository=shopping_list_repository)
+delete_shopping_list_endpoint = DeleteShoppingListEndpoint(delete_service=delete_shopping_list_service)
+
+
+@app.delete("/shopping-lists/{shopping_list_id}")
+def delete_shopping_list(shopping_list_id: int, response: Response, version: Annotated[str | None, Header()] = 1.0) -> None:
+    return delete_shopping_list_endpoint.delete(shopping_list_id, response, version)
+
+
 
 # Test del dominio
 
