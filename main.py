@@ -30,6 +30,11 @@ from shopping_list.infrastructure.rest.shopping_list.shopping_list import Shoppi
 from shopping_list.shopping_list.operations.delete.service import Service as DeleteShoppingListService
 from shopping_list.infrastructure.rest.shopping_list.delete_endpoint import DeleteEndpoint as DeleteShoppingListEndpoint
 
+from shopping_list.shopping_list.operations.update.service import Service as UpdateShoppingListService
+from shopping_list.infrastructure.rest.shopping_list.update_endpoint import UpdateEndpoint as UpdateShoppingListEndpoint
+
+
+
 
 # Inicializamos el logger
 log.init()
@@ -142,6 +147,16 @@ delete_shopping_list_endpoint = DeleteShoppingListEndpoint(delete_service=delete
 @app.delete("/shopping-lists/{shopping_list_id}")
 def delete_shopping_list(shopping_list_id: int, response: Response, version: Annotated[str | None, Header()] = 1.0) -> None:
     return delete_shopping_list_endpoint.delete(shopping_list_id, response, version)
+
+
+update_shopping_list_service = UpdateShoppingListService(shopping_list_repository=shopping_list_repository)
+update_shopping_list_endpoint = UpdateShoppingListEndpoint(update_service=update_shopping_list_service)
+
+@app.put("/shopping-lists/{shopping_list_id}")
+def update_shopping_list(shopping_list_id: int, shopping_list: Annotated[ShoppingList, Body(example={"name": "Celebration shopping list updated"})], response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingList:
+    shopping_list.id = shopping_list_id
+    return update_shopping_list_endpoint.update(shopping_list, response, version)
+
 
 
 

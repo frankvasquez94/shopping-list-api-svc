@@ -1,0 +1,16 @@
+2023-05-02 22:35:36,011 - INFO - app- delete_endpoint - delete - 22 - Delete shopping list endpoint,  deleting shopping list with id: 10, version: 1.0
+2023-05-02 22:35:36,017 - INFO - app- service - delete - 20 - Delete shopping list service,  deleting shopping list with id: 10
+2023-05-02 22:35:36,019 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 10
+2023-05-02 22:35:36,058 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 10 not found
+2023-05-02 22:35:36,059 - INFO - app- service - delete - 24 - Delete shopping list service,  shopping list with id: 10 not found
+2023-05-02 22:35:36,060 - ERROR - app- service - delete - 31 - Delete shopping list service, error description:  code: 004, description: resource not found
+2023-05-02 22:35:36,060 - ERROR - app- delete_endpoint - delete - 34 - Delete shopping list endpoint, error description:  code: 004, description: resource not found
+2023-05-02 22:36:13,973 - INFO - app- delete_endpoint - delete - 22 - Delete shopping list endpoint,  deleting shopping list with id: 1, version: 1.0
+2023-05-02 22:36:13,975 - INFO - app- service - delete - 20 - Delete shopping list service,  deleting shopping list with id: 1
+2023-05-02 22:36:13,976 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 1
+2023-05-02 22:36:13,988 - INFO - app- shopping_list_repository_impl - find - 79 - Shopping list repository, shopping list: {"id": 1, "name": "Shopping list test", "item_details": []} found successfully
+2023-05-02 22:36:13,989 - INFO - app- shopping_list_repository_impl - delete - 40 - Shopping list repository, deleting shopping list with id: 1
+2023-05-02 22:36:14,003 - INFO - app- shopping_list_repository_impl - delete - 45 - Shopping list repository, deleting shopping list: Shopping list test
+2023-05-02 22:36:14,031 - INFO - app- shopping_list_repository_impl - delete - 48 - Shopping list repository, shopping list with id: 1 deleted successfully
+2023-05-02 22:36:14,032 - INFO - app- service - delete - 27 - Delete shopping list service,  shopping list with id: 1 deleted successfully
+2023-05-02 22:36:14,033 - INFO - app- delete_endpoint - delete - 26 - Delete shopping list endpoint,  shopping list with id: 1 deleted successfully
