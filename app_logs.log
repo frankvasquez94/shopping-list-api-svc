@@ -31,3 +31,23 @@
 2023-05-15 20:06:03,316 - INFO - app- service - retrieve - 24 - Retrieve Shopping list service,  shopping list not found, id: 2
 2023-05-15 20:06:03,317 - ERROR - app- service - retrieve - 27 - Retrieve Shopping list service`, error description:   code: 004, description: resource not found
 2023-05-15 20:06:03,317 - ERROR - app- get_endpoint - get - 32 - Get shopping list endpoint, error description:  code: 004, description: resource not found
+2023-05-15 21:17:12,976 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
+2023-05-15 21:17:12,976 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-15 21:17:12,976 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-15 21:17:13,008 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-15 21:22:29,497 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
+2023-05-15 21:22:29,498 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-15 21:22:29,499 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-15 21:22:29,506 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-15 21:27:09,901 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
+2023-05-15 21:27:09,902 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-15 21:27:09,903 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-15 21:27:09,928 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-15 21:30:33,109 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
+2023-05-15 21:30:33,110 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-15 21:30:33,110 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-15 21:30:33,142 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-15 21:30:42,496 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
+2023-05-15 21:30:42,497 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-15 21:30:42,498 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-15 21:30:42,501 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}

@@ -25,7 +25,7 @@ from shopping_list.infrastructure.rest.item.get_all_endpoint import GetAllEndpoi
 from shopping_list.infrastructure.storage.relational_database.shopping_list_repository_impl import ShoppingListRepositoryImpl
 from shopping_list.shopping_list.operations.add.service import Service as AddShoppingListService
 from shopping_list.infrastructure.rest.shopping_list.add_endpoint import AddEndpoint as AddShoppingListEndpoint
-from shopping_list.infrastructure.rest.shopping_list.shopping_list import ShoppingList
+from shopping_list.infrastructure.rest.shopping_list.shopping_list import ShoppingList, ShoppingListResponse
 
 from shopping_list.shopping_list.operations.delete.service import Service as DeleteShoppingListService
 from shopping_list.infrastructure.rest.shopping_list.delete_endpoint import DeleteEndpoint as DeleteShoppingListEndpoint
@@ -35,6 +35,10 @@ from shopping_list.infrastructure.rest.shopping_list.update_endpoint import Upda
 
 from shopping_list.shopping_list.operations.retrieve.service import Service as RetrieveShoppingListService
 from shopping_list.infrastructure.rest.shopping_list.get_endpoint import GetEndpoint as GetShoppingListEndpoint
+
+
+from shopping_list.shopping_list.operations.retrieve_all.service import Service as RetrieveAllShoppingListService
+from shopping_list.infrastructure.rest.shopping_list.get_all_endpoint import GetAllEndpoint as GetAllShoppingListEndpoint
 
 
 
@@ -168,6 +172,17 @@ get_shopping_list_endpoint = GetShoppingListEndpoint(get_service=get_shopping_li
 @app.get("/shopping-lists/{shopping_list_id}")
 def get_shopping_list(shopping_list_id: int, response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingList:
     return get_shopping_list_endpoint.get(shopping_list_id, response, version)
+
+
+
+get_all_shopping_list_service = RetrieveAllShoppingListService(shopping_list_repository=shopping_list_repository)
+get_all_shopping_list_endpoint = GetAllShoppingListEndpoint(get_all_service=get_all_shopping_list_service)
+@app.get("/shopping-lists")
+def get_shopping_list(response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingListResponse:
+    return get_all_shopping_list_endpoint.get_all(response, version)
+
+
+
 
 
 # Test del dominio
