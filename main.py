@@ -33,6 +33,9 @@ from shopping_list.infrastructure.rest.shopping_list.delete_endpoint import Dele
 from shopping_list.shopping_list.operations.update.service import Service as UpdateShoppingListService
 from shopping_list.infrastructure.rest.shopping_list.update_endpoint import UpdateEndpoint as UpdateShoppingListEndpoint
 
+from shopping_list.shopping_list.operations.retrieve.service import Service as RetrieveShoppingListService
+from shopping_list.infrastructure.rest.shopping_list.get_endpoint import GetEndpoint as GetShoppingListEndpoint
+
 
 
 
@@ -158,6 +161,13 @@ def update_shopping_list(shopping_list_id: int, shopping_list: Annotated[Shoppin
     return update_shopping_list_endpoint.update(shopping_list, response, version)
 
 
+get_shopping_list_service = RetrieveShoppingListService(shopping_list_repository=shopping_list_repository)
+get_shopping_list_endpoint = GetShoppingListEndpoint(get_service=get_shopping_list_service)
+
+
+@app.get("/shopping-lists/{shopping_list_id}")
+def get_shopping_list(shopping_list_id: int, response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingList:
+    return get_shopping_list_endpoint.get(shopping_list_id, response, version)
 
 
 # Test del dominio

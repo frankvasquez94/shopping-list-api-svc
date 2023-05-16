@@ -1,0 +1,30 @@
+2023-05-03 21:36:46,913 - INFO - app- update_endpoint - update - 24 - Update shopping list endpoint, version: 1.0
+2023-05-03 21:36:46,917 - INFO - app- update_endpoint - update - 26 - Update shopping list endpoint, request: {"id": 10, "name": "Shopping list test"}
+2023-05-03 21:36:46,918 - INFO - app- service - update - 23 - Update shopping list service,  updating shopping list: {"id": 10, "name": "Shopping list test"}
+2023-05-03 21:36:46,919 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 10
+2023-05-03 21:36:46,951 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 10 not found
+2023-05-03 21:36:46,952 - INFO - app- service - update - 36 - Update shopping list service,  shopping list with id: 10 not found
+2023-05-03 21:36:46,954 - ERROR - app- update_endpoint - update - 33 - Update shopping list endpoint, error description:  code: 004, description: resource not found
+2023-05-03 21:37:02,388 - INFO - app- update_endpoint - update - 24 - Update shopping list endpoint, version: 1.0
+2023-05-03 21:37:02,388 - INFO - app- update_endpoint - update - 26 - Update shopping list endpoint, request: {"id": 1, "name": "Shopping list test"}
+2023-05-03 21:37:02,388 - INFO - app- service - update - 23 - Update shopping list service,  updating shopping list: {"id": 1, "name": "Shopping list test"}
+2023-05-03 21:37:02,392 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 1
+2023-05-03 21:37:02,398 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 1 not found
+2023-05-03 21:37:02,399 - INFO - app- service - update - 36 - Update shopping list service,  shopping list with id: 1 not found
+2023-05-03 21:37:02,400 - ERROR - app- update_endpoint - update - 33 - Update shopping list endpoint, error description:  code: 004, description: resource not found
+2023-05-03 21:38:09,795 - INFO - app- add_endpoint - add - 26 - Add shopping list endpoint,  version: 1.0
+2023-05-03 21:38:09,796 - INFO - app- add_endpoint - add - 28 - Add shopping list endpoint,  creating shopping list: {"id": 0, "name": "Shopping list test"}
+2023-05-03 21:38:09,798 - INFO - app- shopping_list_repository_impl - create - 26 - Shopping list repository, creating shopping list: Shopping list test
+2023-05-03 21:38:09,824 - INFO - app- shopping_list_repository_impl - create - 33 - Shopping list repository, shopping list: Shopping list test created successfully
+2023-05-03 21:38:09,825 - INFO - app- add_endpoint - add - 32 - Add shopping list endpoint,  shopping list created successfully: {"id": 1, "name": "Shopping list test"}
+2023-05-03 21:38:31,328 - INFO - app- update_endpoint - update - 24 - Update shopping list endpoint, version: 1.0
+2023-05-03 21:38:31,329 - INFO - app- update_endpoint - update - 26 - Update shopping list endpoint, request: {"id": 1, "name": "Shopping list test updated"}
+2023-05-03 21:38:31,331 - INFO - app- service - update - 23 - Update shopping list service,  updating shopping list: {"id": 1, "name": "Shopping list test updated"}
+2023-05-03 21:38:31,332 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 1
+2023-05-03 21:38:31,338 - INFO - app- shopping_list_repository_impl - find - 79 - Shopping list repository, shopping list: {"id": 1, "name": "Shopping list test", "item_details": []} found successfully
+2023-05-03 21:38:31,340 - INFO - app- service - update - 41 - Update shopping list service,  shopping list to update: {"id": 1, "name": "Shopping list test", "item_details": []}
+2023-05-03 21:38:31,341 - INFO - app- shopping_list_repository_impl - update - 56 - Shopping list repository, updating shopping list to: {"id": 1, "name": "Shopping list test updated", "item_details": []}
+2023-05-03 21:38:31,355 - INFO - app- shopping_list_repository_impl - update - 60 - Shopping list repository, shopping list to update, id: 1, name: Shopping list test
+2023-05-03 21:38:31,378 - INFO - app- shopping_list_repository_impl - update - 65 - Shopping list repository, shopping list: {"id": 1, "name": "Shopping list test updated", "item_details": []} updated successfully
+2023-05-03 21:38:31,380 - INFO - app- service - update - 45 - Update shopping list service,  shopping_list: id=1 name='Shopping list test updated' item_details=[] updated successfully
+2023-05-03 21:38:31,381 - INFO - app- update_endpoint - update - 30 - Update shopping list endpoint, response: {"id": 1, "name": "Shopping list test updated"}
