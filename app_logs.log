@@ -51,3 +51,7 @@
 2023-05-15 21:30:42,497 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
 2023-05-15 21:30:42,498 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
 2023-05-15 21:30:42,501 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-15 21:33:12,475 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 1.0
+2023-05-15 21:33:12,476 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
+2023-05-15 21:33:12,477 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
+2023-05-15 21:33:12,498 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}

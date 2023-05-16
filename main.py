@@ -93,6 +93,13 @@ add_item_service = AddItemService(item_repository=item_repository_impl)
 add_item_endpoint = AddItemEndpoint(add_service=add_item_service)
 
 
+@app.get("/")
+def home(response: Response, version: Annotated[str | None, Header()] = 1.0):
+    return {
+        "version": version,
+        "description": "Welcome to shopping list API"
+    }
+
 @app.post("/items")
 def add_item(item: Annotated[Item, Body(example={"name": "Desktop"})], response: Response, version: Annotated[str | None, Header()] = 1.0) -> Item:
     return add_item_endpoint.add(item, response, version)
