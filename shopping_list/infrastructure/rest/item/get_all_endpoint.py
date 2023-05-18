@@ -22,8 +22,8 @@ class GetAllEndpoint:
         self.get_all_service = get_all_service
         self.logger = logging.getLogger(LOGGER_NAME)
 
-    def get_all(self, response: Response, version: str) -> ItemResponse:
-        self.logger.info(f'{GET_ALL_ENDPOINT} version: {version}')
+    def get_all(self, response: Response, version: str, page_size: int, page_start_index: int) -> ItemResponse:
+        self.logger.info(f'{GET_ALL_ENDPOINT} version: {version}, page size: {page_size}, page start index: {page_start_index}')
         try:
             self.logger.info(f'{GET_ALL_ENDPOINT}')
             resp: List[ItemDTO] = self.get_all_service.retrieve_all()

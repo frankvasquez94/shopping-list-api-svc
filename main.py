@@ -138,8 +138,8 @@ get_all_items_endpoint = GetAllItemsEndpoint(get_all_service=get_all_items_servi
 
 
 @app.get("/items")
-def get_all_items(response: Response, version: Annotated[str | None, Header()] = 1.0):
-    return get_all_items_endpoint.get_all(response, version)
+def get_all_items(response: Response, version: Annotated[str | None, Header()] = 1.0, pagesize: int = 0, pagestartindex: int = 0):
+    return get_all_items_endpoint.get_all(response, version, pagesize, pagestartindex)
 
 
 # SHOPPING LIST
@@ -185,8 +185,9 @@ def get_shopping_list(shopping_list_id: int, response: Response, version: Annota
 get_all_shopping_list_service = RetrieveAllShoppingListService(shopping_list_repository=shopping_list_repository)
 get_all_shopping_list_endpoint = GetAllShoppingListEndpoint(get_all_service=get_all_shopping_list_service)
 @app.get("/shopping-lists")
-def get_shopping_list(response: Response, version: Annotated[str | None, Header()] = 1.0) -> ShoppingListResponse:
-    return get_all_shopping_list_endpoint.get_all(response, version)
+def get_shopping_list(response: Response, version: Annotated[str | None, Header()] = 1.0, pagesize: int = 0, pagestartindex: int = 0) -> ShoppingListResponse:
+
+    return get_all_shopping_list_endpoint.get_all(response, version, pagesize, pagestartindex)
 
 
 

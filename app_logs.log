@@ -1,57 +1,32 @@
-2023-05-15 20:05:04,441 - INFO - app- get_endpoint - get - 24 - Get shopping list endpoint, version: 1.0
-2023-05-15 20:05:04,445 - INFO - app- get_endpoint - get - 26 - Get shopping list endpoint, request: shopping_list_id- > 10
-2023-05-15 20:05:04,445 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 10
-2023-05-15 20:05:04,486 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 10 not found
-2023-05-15 20:05:04,490 - INFO - app- service - retrieve - 24 - Retrieve Shopping list service,  shopping list not found, id: 10
-2023-05-15 20:05:04,491 - ERROR - app- service - retrieve - 27 - Retrieve Shopping list service`, error description:   code: 004, description: resource not found
-2023-05-15 20:05:04,493 - ERROR - app- get_endpoint - get - 32 - Get shopping list endpoint, error description:  code: 004, description: resource not found
-2023-05-15 20:05:12,782 - INFO - app- get_endpoint - get - 24 - Get shopping list endpoint, version: 1.0
-2023-05-15 20:05:12,783 - INFO - app- get_endpoint - get - 26 - Get shopping list endpoint, request: shopping_list_id- > 9
-2023-05-15 20:05:12,784 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 9
-2023-05-15 20:05:12,792 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 9 not found
-2023-05-15 20:05:12,794 - INFO - app- service - retrieve - 24 - Retrieve Shopping list service,  shopping list not found, id: 9
-2023-05-15 20:05:12,798 - ERROR - app- service - retrieve - 27 - Retrieve Shopping list service`, error description:   code: 004, description: resource not found
-2023-05-15 20:05:12,799 - ERROR - app- get_endpoint - get - 32 - Get shopping list endpoint, error description:  code: 004, description: resource not found
-2023-05-15 20:05:19,140 - INFO - app- get_endpoint - get - 24 - Get shopping list endpoint, version: 1.0
-2023-05-15 20:05:19,141 - INFO - app- get_endpoint - get - 26 - Get shopping list endpoint, request: shopping_list_id- > 2
-2023-05-15 20:05:19,142 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 2
-2023-05-15 20:05:19,148 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 2 not found
-2023-05-15 20:05:19,149 - INFO - app- service - retrieve - 24 - Retrieve Shopping list service,  shopping list not found, id: 2
-2023-05-15 20:05:19,151 - ERROR - app- service - retrieve - 27 - Retrieve Shopping list service`, error description:   code: 004, description: resource not found
-2023-05-15 20:05:19,152 - ERROR - app- get_endpoint - get - 32 - Get shopping list endpoint, error description:  code: 004, description: resource not found
-2023-05-15 20:05:24,407 - INFO - app- get_endpoint - get - 24 - Get shopping list endpoint, version: 1.0
-2023-05-15 20:05:24,410 - INFO - app- get_endpoint - get - 26 - Get shopping list endpoint, request: shopping_list_id- > 1
-2023-05-15 20:05:24,411 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 1
-2023-05-15 20:05:24,427 - INFO - app- shopping_list_repository_impl - find - 79 - Shopping list repository, shopping list: {"id": 1, "name": "Shopping list test updated", "item_details": []} found successfully
-2023-05-15 20:05:24,429 - INFO - app- get_endpoint - get - 29 - Get shopping list endpoint, response: {"id": 1, "name": "Shopping list test updated"}
-2023-05-15 20:06:03,306 - INFO - app- get_endpoint - get - 24 - Get shopping list endpoint, version: 1.0
-2023-05-15 20:06:03,308 - INFO - app- get_endpoint - get - 26 - Get shopping list endpoint, request: shopping_list_id- > 2
-2023-05-15 20:06:03,309 - INFO - app- shopping_list_repository_impl - find - 73 - Shopping list repository, finding shopping list with id: 2
-2023-05-15 20:06:03,314 - INFO - app- shopping_list_repository_impl - find - 82 - Shopping list repository, shopping list with id: 2 not found
-2023-05-15 20:06:03,316 - INFO - app- service - retrieve - 24 - Retrieve Shopping list service,  shopping list not found, id: 2
-2023-05-15 20:06:03,317 - ERROR - app- service - retrieve - 27 - Retrieve Shopping list service`, error description:   code: 004, description: resource not found
-2023-05-15 20:06:03,317 - ERROR - app- get_endpoint - get - 32 - Get shopping list endpoint, error description:  code: 004, description: resource not found
-2023-05-15 21:17:12,976 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
-2023-05-15 21:17:12,976 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
-2023-05-15 21:17:12,976 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
-2023-05-15 21:17:13,008 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
-2023-05-15 21:22:29,497 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
-2023-05-15 21:22:29,498 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
-2023-05-15 21:22:29,499 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
-2023-05-15 21:22:29,506 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
-2023-05-15 21:27:09,901 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
-2023-05-15 21:27:09,902 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
-2023-05-15 21:27:09,903 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
-2023-05-15 21:27:09,928 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
-2023-05-15 21:30:33,109 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
-2023-05-15 21:30:33,110 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
-2023-05-15 21:30:33,110 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
-2023-05-15 21:30:33,142 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
-2023-05-15 21:30:42,496 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0
-2023-05-15 21:30:42,497 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
-2023-05-15 21:30:42,498 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
-2023-05-15 21:30:42,501 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
-2023-05-15 21:33:12,475 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 1.0
-2023-05-15 21:33:12,476 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
-2023-05-15 21:33:12,477 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
-2023-05-15 21:33:12,498 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
+2023-05-17 20:25:55,624 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0, page size: 0, page start index: 0
+2023-05-17 20:25:55,628 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-17 20:25:55,629 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-17 20:25:55,660 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-17 20:28:04,887 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0, page size: 0, page start index: 0
+2023-05-17 20:28:04,887 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-17 20:28:04,887 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-17 20:28:04,899 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-17 20:28:39,033 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0, page size: 10, page start index: 0
+2023-05-17 20:28:39,034 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-17 20:28:39,034 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-17 20:28:39,048 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-17 20:30:11,115 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0, page size: 10, page start index: 11
+2023-05-17 20:30:11,115 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-17 20:30:11,115 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-17 20:30:11,125 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
+2023-05-17 20:33:58,843 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 2.0, page size: 0, page start index: 0
+2023-05-17 20:33:58,844 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
+2023-05-17 20:33:58,845 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
+2023-05-17 20:33:58,876 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
+2023-05-17 20:34:48,759 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 2.0, page size: 10, page start index: 11
+2023-05-17 20:34:48,760 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
+2023-05-17 20:34:48,761 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
+2023-05-17 20:34:48,769 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
+2023-05-17 21:03:29,129 - INFO - app- get_all_endpoint - get_all - 26 - Get all items endpoint version: 2.0, page size: 10, page start index: 11
+2023-05-17 21:03:29,130 - INFO - app- get_all_endpoint - get_all - 28 - Get all items endpoint
+2023-05-17 21:03:29,131 - INFO - app- item_repository_impl - find_all - 89 - Item repository, getting all items
+2023-05-17 21:03:29,154 - INFO - app- get_all_endpoint - get_all - 31 - Get all items endpoint response: {"items": [{"id": 1, "name": "HP laptop"}, {"id": 2, "name": "test item"}, {"id": 3, "name": "test item 2"}, {"id": 4, "name": "test item 3"}, {"id": 6, "name": "test item 5"}, {"id": 7, "name": "test item 6"}, {"id": 8, "name": "test item 7"}, {"id": 9, "name": "test item 8"}, {"id": 10, "name": "test item 9"}, {"id": 11, "name": "test item 10"}, {"id": 12, "name": "test item 11"}, {"id": 13, "name": "test item 12"}, {"id": 14, "name": "test item 13"}, {"id": 15, "name": "test item 14"}, {"id": 16, "name": "Este es un nuevo item"}, {"id": 17, "name": "Item updated"}, {"id": 18, "name": "test item 15"}, {"id": 19, "name": "test item 16"}, {"id": 20, "name": "test item 17"}]}
+2023-05-17 21:03:37,343 - INFO - app- get_all_endpoint - get_all - 26 - Get all shopping list endpoint version: 1.0, page size: 10, page start index: 11
+2023-05-17 21:03:37,345 - INFO - app- get_all_endpoint - get_all - 28 - Get all shopping list endpoint
+2023-05-17 21:03:37,346 - INFO - app- shopping_list_repository_impl - find_all - 90 - Shopping list repository, retrieving all shopping lists
+2023-05-17 21:03:37,355 - INFO - app- get_all_endpoint - get_all - 31 - Get all shopping list endpoint response: {"shopping_lists": [{"id": 1, "name": "Shopping list test updated"}]}
