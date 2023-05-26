@@ -8,6 +8,6 @@ Diagrams are in the file shopping-list-api-svc.simp, this project was created by
 
 ## Class diagram
 
-![Class diagram](/images/ClassDiagram.png)
+![Class diagram](/images/ClassDiagram.png "Class Diagram")
 
 
